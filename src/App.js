@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import WidgetList from './Widgets/WidgetList'
 
-class App extends Component {
+const App = React.createClass({
   render() {
     return (
       <div className="App">
@@ -9,6 +9,6 @@ class App extends Component {
       </div>
     );
   }
-}
+})
 
 export default App;
