@@ -1,14 +1,14 @@
 import React from 'react'
 import {Provider} from 'react-redux'
 import store from './Redux/store'
-import WidgetList from './Widgets/WidgetList'
+import WidgetsList from './containers/WidgetsListContainer'
 
 const App = React.createClass({
   render() {
     return (
       <Provider store={store}>
         <div className="App">
-          <WidgetList />
+          <WidgetsList />
         </div>
       </Provider>
     );
