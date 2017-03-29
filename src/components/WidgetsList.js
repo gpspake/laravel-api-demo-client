@@ -1,4 +1,5 @@
 import React from 'react';
+import WidgetItem from './WidgetItem'
 
 const WidgetsList = React.createClass({
   componentWillMount() {
@@ -7,7 +8,7 @@ const WidgetsList = React.createClass({
   renderWidgets(widgets) {
     return widgets.map((widget) => {
       return (
-        <div key={widget.id}>{widget.name}</div>
+        <WidgetItem key={widget.id} name={widget.name} />
       )
     })
   },
